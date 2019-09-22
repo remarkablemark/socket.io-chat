@@ -18,6 +18,14 @@ socket.on('connect', function() {
   messages.appendChild(li);
 });
 
+socket.on('disconnect', function() {
+  var li = document.createElement('li');
+  li.innerText = 'User disconnected';
+  li.style.fontStyle = 'italic';
+  li.style.color = '#666';
+  messages.appendChild(li);
+});
+
 socket.on('message', function(message) {
   var li = document.createElement('li');
   li.innerText = message;
