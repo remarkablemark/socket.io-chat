@@ -1,6 +1,14 @@
 var socket = io();
 
+var form = document.getElementById('form');
+var input = document.getElementById('input');
 var messages = document.getElementById('messages');
+
+form.addEventListener('submit', function(event) {
+  event.preventDefault();
+  socket.emit('message', input.value);
+  input.value = '';
+});
 
 socket.on('connect', function() {
   var li = document.createElement('li');
