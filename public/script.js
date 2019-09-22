@@ -17,3 +17,9 @@ socket.on('connect', function() {
   li.style.color = '#666';
   messages.appendChild(li);
 });
+
+socket.on('message', function(message) {
+  var li = document.createElement('li');
+  li.innerText = message;
+  messages.appendChild(li);
+});
