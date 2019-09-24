@@ -6,8 +6,10 @@ var messages = document.getElementById('messages');
 
 form.addEventListener('submit', function(event) {
   event.preventDefault();
-  socket.emit('message', input.value);
-  input.value = '';
+  if (input.value) {
+    socket.emit('message', input.value);
+    input.value = '';
+  }
 });
 
 socket.on('connect', function() {
