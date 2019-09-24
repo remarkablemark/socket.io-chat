@@ -24,11 +24,18 @@ body {
   width: 90%;
 }
 
-#form > input[type='submit'] {
-  background: rgb(130, 224, 255);
-  border: none;
+#submit {
+  background: lightgray;
+  border: 0;
   padding: 10px;
   width: 9%;
+}
+
+#submit:active,
+#submit:focus,
+#submit:hover {
+  background: skyblue;
+  cursor: pointer;
 }
 
 #messages {
