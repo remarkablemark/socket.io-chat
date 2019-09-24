@@ -13,16 +13,14 @@ form.addEventListener('submit', function(event) {
 socket.on('connect', function() {
   var li = document.createElement('li');
   li.innerText = 'User connected';
-  li.style.fontStyle = 'italic';
-  li.style.color = '#666';
+  li.className = 'status';
   messages.appendChild(li);
 });
 
 socket.on('disconnect', function() {
   var li = document.createElement('li');
   li.innerText = 'User disconnected';
-  li.style.fontStyle = 'italic';
-  li.style.color = '#666';
+  li.className = 'status';
   messages.appendChild(li);
 });
 

@@ -44,3 +44,8 @@ body {
 #messages > li:nth-child(odd) {
   background: #eee;
 }
+
+#messages > .status {
+  color: #666;
+  font-style: italic;
+}
