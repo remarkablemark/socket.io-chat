@@ -2,7 +2,9 @@
 
 A simple chatroom powered by [Socket.IO](https://socket.io/).
 
-Inspired by the [example](https://socket.io/get-started/chat/). There's also a more advanced [example](https://github.com/socketio/socket.io/tree/master/examples/chat).
+Inspired by the official [example](https://socket.io/get-started/chat/). There's also a more advanced [example](https://github.com/socketio/socket.io/tree/master/examples/chat).
+
+See [Repl.it](https://repl.it/@remarkablemark/socketio-chat) demo.
 
 ## Installation
 
@@ -16,7 +18,11 @@ $ cd socket.io-chat
 Install dependencies:
 
 ```sh
+# npm
 $ npm install
+
+# yarn
+$ yarn
 ```
 
 ## Usage
@@ -24,7 +30,11 @@ $ npm install
 Start the server:
 
 ```sh
+# npm
 $ npm start
+
+# yarn
+$ yarn start
 ```
 
 Stop the server with `Ctrl-C`.
@@ -32,7 +42,7 @@ Stop the server with `Ctrl-C`.
 Open the app:
 
 ```sh
-$ open http://localhost:3000
+$ open http://localhost:3000/
 ```
 
 ## License
